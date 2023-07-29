@@ -6,7 +6,7 @@
 /*   By: hemottu <hemottu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 12:55:39 by hemottu           #+#    #+#             */
-/*   Updated: 2023/07/29 18:16:26 by hemottu          ###   ########.fr       */
+/*   Updated: 2023/07/29 18:18:13 by hemottu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,6 @@ void	ft_monitoring(t_arg *arg)
 			arg->all_ate = 1;
 		ft_usleep(1);
 	}
-	
 }
 
 void	*ft_routine(void *ptr)
@@ -107,5 +106,6 @@ void	ft_close_threads(t_arg *arg)
 	}
 }
 
-// I need to sleep in the monitoring so that the CPU rests a little bit and can do other things
+// I need to sleep in the monitoring so that the CPU rests a little bit and 
+// can do other things
 // (I didn't work when I used valgrind without this little pause)
